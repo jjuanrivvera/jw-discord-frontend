@@ -517,7 +517,7 @@ export default {
             "Content-Type": "application/json"
           },
           body: JSON.stringify({
-            redirect_uri: `http://${location.host}/auth`
+            redirect_uri: `${location.protocol}//${location.host}/auth`
           })
         }
       );

@@ -22,7 +22,7 @@ export default {
 
     await this.$store.dispatch(EXCHANGE_CODE, {
       code: this.$route.query.code,
-      redirect_uri: `http://${location.host}/auth`
+      redirect_uri: `${location.protocol}//${location.host}/auth`
     });
 
     if (!this.isAuthenticated) {
