@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+
+  web:
+    build:
+      context:
+        ./
+    ports:
+    - "80:80"
+    volumes:
+      - ./docker/nginx/app.conf:/etc/nginx/nginx.conf
