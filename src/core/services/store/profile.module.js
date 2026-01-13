@@ -14,9 +14,9 @@ const state = {
   user_personal_info: {
     id: "id",
     avatar: "avatar",
-    username: "username"
+    username: "username",
   },
-  user_account_info: null
+  user_account_info: null,
 };
 
 const getters = {
@@ -30,7 +30,7 @@ const getters = {
 
   currentUserPhoto(state) {
     return state.user_personal_info.avatar;
-  }
+  },
 };
 
 const actions = {
@@ -48,8 +48,8 @@ const actions = {
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${JwtService.getToken()}`,
-        "Access-Control-Allow-Origin": "*"
-      }
+        "Access-Control-Allow-Origin": "*",
+      },
     });
 
     if (response.status === 200) {
@@ -58,7 +58,7 @@ const actions = {
     } else {
       context.commit(SET_ERROR, "Invalid code");
     }
-  }
+  },
 };
 
 const mutations = {
@@ -67,12 +67,12 @@ const mutations = {
   },
   [SET_ACCOUNT_INFO](state, user_account_info) {
     state.user_account_info = user_account_info;
-  }
+  },
 };
 
 export default {
   state,
   actions,
   mutations,
-  getters
+  getters,
 };

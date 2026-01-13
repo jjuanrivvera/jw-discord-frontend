@@ -64,7 +64,7 @@
         id="kt_tiles_widget_8_chart"
         class="card-rounded-bottom"
         data-color="warning"
-        style="height: 150px; padding-rigth:0"
+        style="height: 150px; padding-rigth: 0"
       >
         <apexchart
           class="card-rounded-bottom"
@@ -87,7 +87,7 @@ import { mapGetters } from "vuex";
 export default {
   name: "widget-4",
   components: {
-    Dropdown3
+    Dropdown3,
   },
   data() {
     return {
@@ -97,14 +97,14 @@ export default {
           desc: "Ricky Hunt, Sandra Trepp",
           svg: process.env.BASE_URL + "media/svg/icons/Home/Library.svg",
           profit: "+90$",
-          class: "primary"
+          class: "primary",
         },
         {
           title: "Top Sales",
           desc: "PitStop Emails",
           svg: process.env.BASE_URL + "media/svg/icons/Devices/Mic.svg",
           profit: "+4500$",
-          class: "warning"
+          class: "warning",
         },
         {
           title: "Bestsellers",
@@ -113,20 +113,20 @@ export default {
             process.env.BASE_URL +
             "media/svg/icons/Communication/Group-chat.svg",
           profit: "+75$",
-          class: "success"
-        }
+          class: "success",
+        },
       ],
       chartOptions: {},
       series: [
         {
           name: "Net Profit",
-          data: [20, 20, 30, 15, 40, 30]
-        }
-      ]
+          data: [20, 20, 30, 15, 40, 30],
+        },
+      ],
     };
   },
   computed: {
-    ...mapGetters(["layoutConfig"])
+    ...mapGetters(["layoutConfig"]),
   },
   mounted() {
     this.chartOptions = {
@@ -134,47 +134,47 @@ export default {
         type: "area",
         height: 150,
         toolbar: {
-          show: false
+          show: false,
         },
         zoom: {
-          enabled: false
+          enabled: false,
         },
         sparkline: {
-          enabled: true
-        }
+          enabled: true,
+        },
       },
       plotOptions: {},
       legend: {
-        show: false
+        show: false,
       },
       dataLabels: {
-        enabled: false
+        enabled: false,
       },
       fill: {
         type: "solid",
-        opacity: 1
+        opacity: 1,
       },
       stroke: {
         curve: "smooth",
         show: true,
         width: 3,
-        colors: [this.layoutConfig("colors.theme.base.primary")]
+        colors: [this.layoutConfig("colors.theme.base.primary")],
       },
       xaxis: {
         categories: ["Feb", "Mar", "Apr", "May", "Jun", "Aug", "Sep"],
         axisBorder: {
-          show: false
+          show: false,
         },
         axisTicks: {
-          show: false
+          show: false,
         },
         labels: {
           show: false,
           style: {
             colors: this.layoutConfig("colors.gray.gray-500"),
             fontSize: "12px",
-            fontFamily: this.layoutConfig("font-family")
-          }
+            fontFamily: this.layoutConfig("font-family"),
+          },
         },
         crosshairs: {
           show: false,
@@ -182,12 +182,12 @@ export default {
           stroke: {
             color: this.layoutConfig("colors.gray.gray-300"),
             width: 1,
-            dashArray: 3
-          }
+            dashArray: 3,
+          },
         },
         tooltip: {
-          enabled: false
-        }
+          enabled: false,
+        },
       },
       yaxis: {
         show: false,
@@ -198,56 +198,56 @@ export default {
           style: {
             colors: this.layoutConfig("colors.gray.gray-500"),
             fontSize: "12px",
-            fontFamily: this.layoutConfig("font-family")
-          }
-        }
+            fontFamily: this.layoutConfig("font-family"),
+          },
+        },
       },
       states: {
         normal: {
           filter: {
             type: "none",
-            value: 0
-          }
+            value: 0,
+          },
         },
         hover: {
           filter: {
             type: "none",
-            value: 0
-          }
+            value: 0,
+          },
         },
         active: {
           allowMultipleDataPointsSelection: false,
           filter: {
             type: "none",
-            value: 0
-          }
-        }
+            value: 0,
+          },
+        },
       },
       tooltip: {
         style: {
           fontSize: "12px",
-          fontFamily: this.layoutConfig("font-family")
+          fontFamily: this.layoutConfig("font-family"),
         },
         y: {
-          formatter: function(val) {
+          formatter: function (val) {
             return "$" + val + " thousands";
-          }
-        }
+          },
+        },
       },
       colors: [this.layoutConfig("colors.theme.light.secondary")],
       markers: {
         colors: [this.layoutConfig("colors.theme.light.primary")],
         strokeColor: [this.layoutConfig("colors.theme.base.white")],
-        strokeWidth: 3
+        strokeWidth: 3,
       },
       grid: {
         show: false,
         padding: {
           left: 0,
-          right: 0
-        }
-      }
+          right: 0,
+        },
+      },
     };
-  }
+  },
 };
 </script>

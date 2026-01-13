@@ -77,6 +77,6 @@
 
 <script>
 export default {
-  name: "Widget11"
+  name: "Widget11",
 };
 </script>

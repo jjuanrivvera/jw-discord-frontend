@@ -70,7 +70,7 @@ import { mapGetters } from "vuex";
 export default {
   name: "widget-10",
   components: {
-    Dropdown2
+    Dropdown2,
   },
   data() {
     return {
@@ -78,17 +78,17 @@ export default {
       series: [
         {
           name: "Net Profit",
-          data: [35, 65, 75, 55, 45, 60, 55]
+          data: [35, 65, 75, 55, 45, 60, 55],
         },
         {
           name: "Revenue",
-          data: [40, 70, 80, 60, 50, 65, 60]
-        }
-      ]
+          data: [40, 70, 80, 60, 50, 65, 60],
+        },
+      ],
     };
   },
   computed: {
-    ...mapGetters(["layoutConfig"])
+    ...mapGetters(["layoutConfig"]),
   },
   mounted() {
     // reference; kt_mixed_widget_1_chart
@@ -97,114 +97,114 @@ export default {
         type: "bar",
         height: 200,
         toolbar: {
-          show: false
+          show: false,
         },
         sparkline: {
-          enabled: true
-        }
+          enabled: true,
+        },
       },
       plotOptions: {
         bar: {
           horizontal: false,
           columnWidth: ["30%"],
-          endingShape: "rounded"
-        }
+          endingShape: "rounded",
+        },
       },
       legend: {
-        show: false
+        show: false,
       },
       dataLabels: {
-        enabled: false
+        enabled: false,
       },
       stroke: {
         show: true,
         width: 1,
-        colors: ["transparent"]
+        colors: ["transparent"],
       },
       xaxis: {
         categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
         axisBorder: {
-          show: false
+          show: false,
         },
         axisTicks: {
-          show: false
+          show: false,
         },
         labels: {
           show: false,
           style: {
             colors: this.layoutConfig("colors.gray.gray-500"),
             fontSize: "12px",
-            fontFamily: this.layoutConfig("font-family")
-          }
-        }
+            fontFamily: this.layoutConfig("font-family"),
+          },
+        },
       },
       yaxis: {
         min: 0,
         max: 100,
         axisBorder: {
-          show: false
+          show: false,
         },
         axisTicks: {
-          show: false
+          show: false,
         },
         labels: {
           show: false,
           style: {
             colors: this.layoutConfig("colors.gray.gray-500"),
             fontSize: "12px",
-            fontFamily: this.layoutConfig("font-family")
-          }
-        }
+            fontFamily: this.layoutConfig("font-family"),
+          },
+        },
       },
       fill: {
-        opacity: 1
+        opacity: 1,
       },
       states: {
         normal: {
           filter: {
             type: "none",
-            value: 0
-          }
+            value: 0,
+          },
         },
         hover: {
           filter: {
             type: "none",
-            value: 0
-          }
+            value: 0,
+          },
         },
         active: {
           allowMultipleDataPointsSelection: false,
           filter: {
             type: "none",
-            value: 0
-          }
-        }
+            value: 0,
+          },
+        },
       },
       tooltip: {
         style: {
           fontSize: "12px",
-          fontFamily: this.layoutConfig("font-family")
+          fontFamily: this.layoutConfig("font-family"),
         },
         y: {
-          formatter: function(val) {
+          formatter: function (val) {
             return "$" + val + " thousands";
-          }
-        }
+          },
+        },
       },
       colors: [
         this.layoutConfig("colors.theme.base.success"),
-        this.layoutConfig("colors.theme.base.white")
+        this.layoutConfig("colors.theme.base.white"),
       ],
       grid: {
         borderColor: this.layoutConfig("colors.gray.gray-200"),
         strokeDashArray: 4,
         yaxis: {
           lines: {
-            show: false
-          }
-        }
-      }
+            show: false,
+          },
+        },
+      },
     };
-  }
+  },
 };
 </script>

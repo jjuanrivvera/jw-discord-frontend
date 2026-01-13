@@ -93,7 +93,7 @@ export default {
      */
     asideEnabled() {
       return this.layoutConfig("aside.self.display");
-    }
-  }
+    },
+  },
 };
 </script>

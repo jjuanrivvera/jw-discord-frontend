@@ -170,7 +170,7 @@ export default {
           company: "Intertico",
           company_desc: "Web, UI/UX Design",
           class: "primary",
-          status: "Approved"
+          status: "Approved",
         },
         {
           order_id: "05822-FXSP",
@@ -181,7 +181,7 @@ export default {
           company: "Agoda",
           company_desc: "Houses & Hotels",
           class: "warning",
-          status: "In Progress"
+          status: "In Progress",
         },
         {
           order_id: "00347-BCLQ",
@@ -192,7 +192,7 @@ export default {
           company: "RoadGee",
           company_desc: "Transportation",
           class: "success",
-          status: "Success"
+          status: "Success",
         },
         {
           order_id: "4472-QREX",
@@ -203,9 +203,9 @@ export default {
           company: "The Hill",
           company_desc: "Insurance",
           class: "danger",
-          status: "Danger"
-        }
-      ]
+          status: "Danger",
+        },
+      ],
     };
   },
   components: {},
@@ -216,7 +216,7 @@ export default {
       } else {
         this.checked = false;
       }
-    }
-  }
+    },
+  },
 };
 </script>

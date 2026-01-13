@@ -3,14 +3,14 @@
     <div
       class="error error-6 d-flex flex-row-fluid bgi-size-cover bgi-position-center"
       :style="{
-        backgroundImage: `url(${backgroundImage})`
+        backgroundImage: `url(${backgroundImage})`,
       }"
     >
       <!-- begin:: Content -->
       <div class="d-flex flex-column flex-row-fluid text-center">
         <h1
           class="error-title font-weight-boldest text-white mb-12"
-          style="margin-top: 12rem;"
+          style="margin-top: 12rem"
         >
           Oops...
         </h1>
@@ -36,7 +36,7 @@ export default {
   computed: {
     backgroundImage() {
       return process.env.BASE_URL + "media/error/bg6.jpg";
-    }
-  }
+    },
+  },
 };
 </script>

@@ -15,7 +15,7 @@ const rootPath = path.resolve(__dirname);
 const distPath = rootPath + "/src/assets";
 
 const entries = {
-  "css/style.vue": "./src/assets/sass/style.vue.scss"
+  "css/style.vue": "./src/assets/sass/style.vue.scss",
 };
 
 // remove older folders and files
@@ -23,44 +23,44 @@ const entries = {
   await del.sync(distPath + "/css", { force: true });
 })();
 
-const mainConfig = function() {
+const mainConfig = function () {
   return {
     mode: "development",
     stats: "errors-only",
     performance: {
-      hints: false
+      hints: false,
     },
     entry: entries,
     output: {
       // main output path in assets folder
       path: distPath,
       // output path based on the entries' filename
-      filename: "[name].js"
+      filename: "[name].js",
     },
     resolve: { extensions: [".scss"] },
     plugins: [
       // webpack log message
       new WebpackMessages({
         name: themeName,
-        logger: str => console.log(`>> ${str}`)
+        logger: (str) => console.log(`>> ${str}`),
       }),
       // create css file
       new MiniCssExtractPlugin({
-        filename: "[name].css"
+        filename: "[name].css",
       }),
       new WebpackRTLPlugin({
-        filename: "[name].rtl.css"
+        filename: "[name].rtl.css",
       }),
       {
-        apply: compiler => {
+        apply: (compiler) => {
           // hook name
           compiler.hooks.afterEmit.tap("AfterEmitPlugin", () => {
             (async () => {
               await del.sync(distPath + "/css/*.js", { force: true });
             })();
           });
-        }
-      }
+        },
+      },
     ],
     module: {
       rules: [
@@ -72,16 +72,16 @@ const mainConfig = function() {
             {
               loader: "sass-loader",
               options: {
-                sourceMap: true
-              }
-            }
-          ]
-        }
-      ]
-    }
+                sourceMap: true,
+              },
+            },
+          ],
+        },
+      ],
+    },
   };
 };
 
-module.exports = function() {
+module.exports = function () {
   return [mainConfig()];
 };

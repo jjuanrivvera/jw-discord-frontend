@@ -9,7 +9,7 @@ export default new Router({
     {
       path: "/auth",
       name: "auth",
-      component: () => import("@/view/layout/Code")
+      component: () => import("@/view/layout/Code"),
     },
     {
       path: "/",
@@ -19,9 +19,24 @@ export default new Router({
         {
           path: "/dashboard",
           name: "dashboard",
-          component: () => import("@/view/pages/Dashboard.vue")
-        }
-      ]
+          component: () => import("@/view/pages/Dashboard.vue"),
+        },
+        {
+          path: "/server/:id",
+          name: "server-overview",
+          component: () => import("@/view/pages/server/ServerOverview.vue"),
+        },
+        {
+          path: "/server/:id/settings",
+          name: "server-settings",
+          component: () => import("@/view/pages/server/ServerSettings.vue"),
+        },
+        {
+          path: "/server/:id/schedules",
+          name: "server-schedules",
+          component: () => import("@/view/pages/server/ServerSchedules.vue"),
+        },
+      ],
     },
     {
       path: "/custom-error",
@@ -31,9 +46,9 @@ export default new Router({
         {
           path: "error-1",
           name: "error-1",
-          component: () => import("@/view/pages/error/Error-1.vue")
-        }
-      ]
+          component: () => import("@/view/pages/error/Error-1.vue"),
+        },
+      ],
     },
     {
       path: "/",
@@ -42,24 +57,24 @@ export default new Router({
         {
           name: "login",
           path: "/login",
-          component: () => import("@/view/pages/auth/login_pages/Login-1")
+          component: () => import("@/view/pages/auth/login_pages/Login-1"),
         },
         {
           name: "register",
           path: "/register",
-          component: () => import("@/view/pages/auth/login_pages/Login-1")
-        }
-      ]
+          component: () => import("@/view/pages/auth/login_pages/Login-1"),
+        },
+      ],
     },
     {
       path: "*",
-      redirect: "/404"
+      redirect: "/404",
     },
     {
       // the 404 route, when none of the above matches
       path: "/404",
       name: "404",
-      component: () => import("@/view/pages/error/Error-1.vue")
-    }
-  ]
+      component: () => import("@/view/pages/error/Error-1.vue"),
+    },
+  ],
 });

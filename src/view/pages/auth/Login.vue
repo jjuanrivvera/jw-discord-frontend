@@ -130,21 +130,21 @@ export default {
       // Remove this dummy login info
       form: {
         email: "admin@demo.com",
-        password: "demo"
-      }
+        password: "demo",
+      },
     };
   },
   validations: {
     form: {
       email: {
         required,
-        email
+        email,
       },
       password: {
         required,
-        minLength: minLength(3)
-      }
-    }
+        minLength: minLength(3),
+      },
+    },
   },
   methods: {
     validateState(name) {
@@ -154,7 +154,7 @@ export default {
     resetForm() {
       this.form = {
         email: null,
-        password: null
+        password: null,
       };
 
       this.$nextTick(() => {
@@ -191,12 +191,12 @@ export default {
           "spinner-right"
         );
       }, 2000);
-    }
+    },
   },
   computed: {
     ...mapState({
-      errors: state => state.auth.errors
-    })
-  }
+      errors: (state) => state.auth.errors,
+    }),
+  },
 };
 </script>

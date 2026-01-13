@@ -64,36 +64,36 @@ export default {
         {
           title: "BlueSky Apartments",
           desc: "2 bed, 1 bath, 1 carpark",
-          img: "media/stock-600x400/img-17.jpg"
+          img: "media/stock-600x400/img-17.jpg",
         },
         {
           title: "Yellow Apartments",
           desc: "2 bed, 2 bath, 1 carpark",
-          img: "media/stock-600x400/img-1.jpg"
+          img: "media/stock-600x400/img-1.jpg",
         },
         {
           title: "421 Avenue",
           desc: "3 bed, 1 bath, 1 carpark",
-          img: "media/stock-600x400/img-22.jpg"
+          img: "media/stock-600x400/img-22.jpg",
         },
         {
           title: "Glassbricks",
           desc: "2 bed, 2 bath, 1 carpark",
-          img: "media/stock-600x400/img-9.jpg"
+          img: "media/stock-600x400/img-9.jpg",
         },
         {
           title: "RollerCoaster",
           desc: "4 bed, 3 bath, 1 carpark",
-          img: "media/stock-600x400/img-11.jpg"
-        }
-      ]
+          img: "media/stock-600x400/img-11.jpg",
+        },
+      ],
     };
   },
   components: {
-    Dropdown2
+    Dropdown2,
   },
   computed: {
-    ...mapGetters(["layoutConfig"])
-  }
+    ...mapGetters(["layoutConfig"]),
+  },
 };
 </script>

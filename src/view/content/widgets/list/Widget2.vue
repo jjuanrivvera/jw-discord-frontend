@@ -130,36 +130,36 @@ export default {
           desc: "Most Successful",
           desc2: "Python, MySQL",
           users: "7200 Users",
-          img: "media/svg/misc/015-telegram.svg"
+          img: "media/svg/misc/015-telegram.svg",
         },
         {
           title: "Top Authors",
           desc: "Successful Fellas",
           desc2: "ReactJs, HTML",
           users: "4600 Users",
-          img: "media/svg/misc/006-plurk.svg"
+          img: "media/svg/misc/006-plurk.svg",
         },
         {
           title: "New Users",
           desc: "Awesome Users",
           desc2: "Laravel, Metronic",
           users: "890 Users",
-          img: "media/svg/misc/003-puzzle.svg"
+          img: "media/svg/misc/003-puzzle.svg",
         },
         {
           title: "Bestseller Theme",
           desc: "Amazing Templates",
           desc2: "ReactJS, Ruby",
           users: "354 Users",
-          img: "media/svg/misc/014-kickstarter.svg"
+          img: "media/svg/misc/014-kickstarter.svg",
         },
         {
           title: "Active Customers",
           desc: "Best Customers",
           desc2: "AngularJS, C#",
           users: "6370 Users",
-          img: "media/svg/misc/005-bebo.svg"
-        }
+          img: "media/svg/misc/005-bebo.svg",
+        },
       ],
       week: [
         {
@@ -167,36 +167,36 @@ export default {
           desc: "Amazing Templates",
           desc2: "ReactJS, Ruby",
           users: "354 Users",
-          img: "media/svg/misc/014-kickstarter.svg"
+          img: "media/svg/misc/014-kickstarter.svg",
         },
         {
           title: "Popular Authors",
           desc: "Most Successful",
           desc2: "Python, MySQL",
           users: "7200 Users",
-          img: "media/svg/misc/015-telegram.svg"
+          img: "media/svg/misc/015-telegram.svg",
         },
         {
           title: "Top Authors",
           desc: "Successful Fellas",
           desc2: "ReactJs, HTML",
           users: "4600 Users",
-          img: "media/svg/misc/006-plurk.svg"
+          img: "media/svg/misc/006-plurk.svg",
         },
         {
           title: "New Users",
           desc: "Awesome Users",
           desc2: "Laravel, Metronic",
           users: "890 Users",
-          img: "media/svg/misc/003-puzzle.svg"
+          img: "media/svg/misc/003-puzzle.svg",
         },
         {
           title: "Active Customers",
           desc: "Best Customers",
           desc2: "AngularJS, C#",
           users: "6370 Users",
-          img: "media/svg/misc/005-bebo.svg"
-        }
+          img: "media/svg/misc/005-bebo.svg",
+        },
       ],
       day: [
         {
@@ -204,37 +204,37 @@ export default {
           desc: "Successful Fellas",
           desc2: "ReactJs, HTML",
           users: "4600 Users",
-          img: "media/svg/misc/006-plurk.svg"
+          img: "media/svg/misc/006-plurk.svg",
         },
         {
           title: "Popular Authors",
           desc: "Most Successful",
           desc2: "Python, MySQL",
           users: "7200 Users",
-          img: "media/svg/misc/015-telegram.svg"
+          img: "media/svg/misc/015-telegram.svg",
         },
         {
           title: "New Users",
           desc: "Awesome Users",
           desc2: "Laravel, Metronic",
           users: "890 Users",
-          img: "media/svg/misc/003-puzzle.svg"
+          img: "media/svg/misc/003-puzzle.svg",
         },
         {
           title: "Active Customers",
           desc: "Best Customers",
           desc2: "AngularJS, C#",
           users: "6370 Users",
-          img: "media/svg/misc/005-bebo.svg"
+          img: "media/svg/misc/005-bebo.svg",
         },
         {
           title: "Bestseller Theme",
           desc: "Amazing Templates",
           desc2: "ReactJS, Ruby",
           users: "354 Users",
-          img: "media/svg/misc/014-kickstarter.svg"
-        }
-      ]
+          img: "media/svg/misc/014-kickstarter.svg",
+        },
+      ],
     };
   },
   computed: {
@@ -243,7 +243,7 @@ export default {
       if (this.show === "week") return this.week;
       if (this.show === "day") return this.day;
       return this.day;
-    }
-  }
+    },
+  },
 };
 </script>

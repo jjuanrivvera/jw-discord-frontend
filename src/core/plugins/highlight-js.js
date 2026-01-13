@@ -15,6 +15,6 @@ Vue.use(VueHighlightJS, {
     scss,
     javascript,
     json,
-    vue
-  }
+    vue,
+  },
 });

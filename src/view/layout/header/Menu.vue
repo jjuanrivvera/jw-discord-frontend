@@ -10,7 +10,7 @@
         class="menu-item"
         :class="[
           isActive && 'menu-item-active',
-          isExactActive && 'menu-item-active'
+          isExactActive && 'menu-item-active',
         ]"
       >
         <a :href="href" class="menu-link" @click="navigate">
@@ -27,7 +27,7 @@ export default {
   methods: {
     hasActiveChildren(match) {
       return this.$route["path"].indexOf(match) !== -1;
-    }
-  }
+    },
+  },
 };
 </script>

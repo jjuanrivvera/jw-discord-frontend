@@ -45,7 +45,7 @@
       <!--begin::Content-->
       <perfect-scrollbar
         class="offcanvas-content pr-5 mr-n5 scroll"
-        style="max-height: 90vh; position: relative;"
+        style="max-height: 90vh; position: relative"
       >
         <!--begin::Header-->
         <div class="d-flex align-items-center mt-5">
@@ -271,30 +271,30 @@ export default {
           desc: "Due in 2 Days",
           alt: "+28%",
           svg: "media/svg/icons/Home/Library.svg",
-          type: "warning"
+          type: "warning",
         },
         {
           title: "Would be to people",
           desc: "Due in 2 Days",
           alt: "+50%",
           svg: "media/svg/icons/Communication/Write.svg",
-          type: "success"
+          type: "success",
         },
         {
           title: "Purpose would be to persuade",
           desc: "Due in 2 Days",
           alt: "-27%",
           svg: "media/svg/icons/Communication/Group-chat.svg",
-          type: "danger"
+          type: "danger",
         },
         {
           title: "The best product",
           desc: "Due in 2 Days",
           alt: "+8%",
           svg: "media/svg/icons/General/Attachment2.svg",
-          type: "info"
-        }
-      ]
+          type: "info",
+        },
+      ],
     };
   },
   async mounted() {
@@ -310,7 +310,7 @@ export default {
     },
     closeOffcanvas() {
       new KTOffcanvas(KTLayoutQuickUser.getElement()).hide();
-    }
+    },
   },
   computed: {
     ...mapGetters(["currentUserPersonalInfo", "isAuthenticated"]),
@@ -321,7 +321,7 @@ export default {
 
     picture() {
       return process.env.BASE_URL + "media/users/300_21.jpg";
-    }
-  }
+    },
+  },
 };
 </script>

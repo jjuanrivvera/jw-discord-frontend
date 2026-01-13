@@ -56,7 +56,7 @@ export default {
         }
       }
       return classes.join(" ");
-    }
-  }
+    },
+  },
 };
 </script>

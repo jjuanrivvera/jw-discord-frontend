@@ -3,16 +3,14 @@
     <div
       class="error error-3 d-flex flex-row-fluid bgi-size-cover bgi-position-center"
       :style="{
-        backgroundImage: `url(${backgroundImage})`
+        backgroundImage: `url(${backgroundImage})`,
       }"
     >
       <!-- begin:: Content -->
       <div
         class="px-10 px-md-30 py-10 py-md-0 d-flex flex-column justify-content-md-center"
       >
-        <h1 class="error-title text-stroke text-transparent">
-          404
-        </h1>
+        <h1 class="error-title text-stroke text-transparent">404</h1>
         <p class="display-4 font-weight-boldest text-white mb-12">
           How did you get here
         </p>
@@ -40,7 +38,7 @@ export default {
   computed: {
     backgroundImage() {
       return process.env.BASE_URL + "media/error/bg3.jpg";
-    }
-  }
+    },
+  },
 };
 </script>

@@ -10,7 +10,7 @@
         class="menu-item"
         :class="[
           isActive && 'menu-item-active',
-          isExactActive && 'menu-item-active'
+          isExactActive && 'menu-item-active',
         ]"
       >
         <a :href="href" class="menu-link" @click="navigate">
@@ -30,7 +30,7 @@
         class="menu-item"
         :class="[
           isActive && 'menu-item-active',
-          isExactActive && 'menu-item-active'
+          isExactActive && 'menu-item-active',
         ]"
       >
         <a :href="href" class="menu-link" @click="navigate">
@@ -75,7 +75,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -97,7 +97,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -114,7 +114,7 @@
             data-menu-toggle="hover"
             class="menu-item menu-item-submenu"
             v-bind:class="{
-              'menu-item-open': hasActiveChildren('/vue-bootstrap/button')
+              'menu-item-open': hasActiveChildren('/vue-bootstrap/button'),
             }"
           >
             <a href="#" class="menu-link menu-toggle">
@@ -143,7 +143,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -165,7 +165,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -187,7 +187,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -212,7 +212,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -234,7 +234,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -256,7 +256,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -278,7 +278,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -300,7 +300,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -317,7 +317,7 @@
             data-menu-toggle="hover"
             class="menu-item menu-item-submenu"
             v-bind:class="{
-              'menu-item-open': hasActiveChildren('/vue-bootstrap/form')
+              'menu-item-open': hasActiveChildren('/vue-bootstrap/form'),
             }"
           >
             <a href="#" class="menu-link menu-toggle">
@@ -346,7 +346,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -368,7 +368,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -390,7 +390,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -412,7 +412,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -434,7 +434,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -456,7 +456,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -478,7 +478,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -500,7 +500,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -525,7 +525,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -547,7 +547,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -569,7 +569,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -591,7 +591,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -613,7 +613,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -635,7 +635,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -657,7 +657,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -679,7 +679,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -696,7 +696,7 @@
             data-menu-toggle="hover"
             class="menu-item menu-item-submenu"
             v-bind:class="{
-              'menu-item-open': hasActiveChildren('/vue-bootstrap/nav')
+              'menu-item-open': hasActiveChildren('/vue-bootstrap/nav'),
             }"
           >
             <a href="#" class="menu-link menu-toggle">
@@ -725,7 +725,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -747,7 +747,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -767,7 +767,7 @@
             data-menu-toggle="hover"
             class="menu-item menu-item-submenu"
             v-bind:class="{
-              'menu-item-open': hasActiveChildren('/vue-bootstrap/pagination')
+              'menu-item-open': hasActiveChildren('/vue-bootstrap/pagination'),
             }"
           >
             <a href="#" class="menu-link menu-toggle">
@@ -796,7 +796,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -818,7 +818,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -838,7 +838,7 @@
             data-menu-toggle="hover"
             class="menu-item menu-item-submenu"
             v-bind:class="{
-              'menu-item-open': hasActiveChildren('/vue-bootstrap/notify')
+              'menu-item-open': hasActiveChildren('/vue-bootstrap/notify'),
             }"
           >
             <a href="#" class="menu-link menu-toggle">
@@ -867,7 +867,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -889,7 +889,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -911,7 +911,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -931,7 +931,7 @@
             data-menu-toggle="hover"
             class="menu-item menu-item-submenu"
             v-bind:class="{
-              'menu-item-open': hasActiveChildren('/vue-bootstrap/progress')
+              'menu-item-open': hasActiveChildren('/vue-bootstrap/progress'),
             }"
           >
             <a href="#" class="menu-link menu-toggle">
@@ -960,7 +960,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -982,7 +982,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -1007,7 +1007,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1029,7 +1029,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1074,7 +1074,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1096,7 +1096,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1118,7 +1118,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1140,7 +1140,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1162,7 +1162,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1184,7 +1184,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1206,7 +1206,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1228,7 +1228,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1245,7 +1245,7 @@
             data-menu-toggle="hover"
             class="menu-item menu-item-submenu"
             v-bind:class="{
-              'menu-item-open': hasActiveChildren('/vuetify/forms')
+              'menu-item-open': hasActiveChildren('/vuetify/forms'),
             }"
           >
             <a href="#" class="menu-link menu-toggle">
@@ -1274,7 +1274,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -1296,7 +1296,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -1318,7 +1318,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -1340,7 +1340,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -1362,7 +1362,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -1384,7 +1384,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -1406,7 +1406,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -1426,7 +1426,7 @@
             data-menu-toggle="hover"
             class="menu-item menu-item-submenu"
             v-bind:class="{
-              'menu-item-open': hasActiveChildren('/vuetify/tables')
+              'menu-item-open': hasActiveChildren('/vuetify/tables'),
             }"
           >
             <a href="#" class="menu-link menu-toggle">
@@ -1455,7 +1455,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -1477,7 +1477,7 @@
                     class="menu-item"
                     :class="[
                       isActive && 'menu-item-active',
-                      isExactActive && 'menu-item-active'
+                      isExactActive && 'menu-item-active',
                     ]"
                   >
                     <a :href="href" class="menu-link" @click="navigate">
@@ -1502,7 +1502,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1524,7 +1524,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1546,7 +1546,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1568,7 +1568,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1593,7 +1593,7 @@
       data-menu-toggle="hover"
       class="menu-item menu-item-submenu"
       v-bind:class="{
-        'menu-item-open': hasActiveChildren('/custom-error/error')
+        'menu-item-open': hasActiveChildren('/custom-error/error'),
       }"
     >
       <a href="#" class="menu-link menu-toggle">
@@ -1620,7 +1620,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1642,7 +1642,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1664,7 +1664,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1686,7 +1686,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1708,7 +1708,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1730,7 +1730,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1750,7 +1750,7 @@
       data-menu-toggle="hover"
       class="menu-item menu-item-submenu"
       v-bind:class="{
-        'menu-item-open': hasActiveChildren('/custom-wizard/wizard')
+        'menu-item-open': hasActiveChildren('/custom-wizard/wizard'),
       }"
     >
       <a href="#" class="menu-link menu-toggle">
@@ -1777,7 +1777,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1799,7 +1799,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1821,7 +1821,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1843,7 +1843,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1863,7 +1863,7 @@
       data-menu-toggle="hover"
       class="menu-item menu-item-submenu"
       v-bind:class="{
-        'menu-item-open': hasActiveChildren('/custom-plugins')
+        'menu-item-open': hasActiveChildren('/custom-plugins'),
       }"
     >
       <a href="#" class="menu-link menu-toggle">
@@ -1883,7 +1883,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1902,7 +1902,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1920,7 +1920,7 @@
       data-menu-toggle="hover"
       class="menu-item menu-item-submenu"
       v-bind:class="{
-        'menu-item-open': hasActiveChildren('/profile')
+        'menu-item-open': hasActiveChildren('/profile'),
       }"
     >
       <a href="#" class="menu-link menu-toggle">
@@ -1940,7 +1940,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1959,7 +1959,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1978,7 +1978,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -1997,7 +1997,7 @@
               class="menu-item"
               :class="[
                 isActive && 'menu-item-active',
-                isExactActive && 'menu-item-active'
+                isExactActive && 'menu-item-active',
               ]"
             >
               <a :href="href" class="menu-link" @click="navigate">
@@ -2018,7 +2018,7 @@ export default {
   methods: {
     hasActiveChildren(match) {
       return this.$route["path"].indexOf(match) !== -1;
-    }
-  }
+    },
+  },
 };
 </script>

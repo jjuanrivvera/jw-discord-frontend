@@ -66,33 +66,30 @@ export default {
       list: [
         {
           title: "Top Authors",
-          desc:
-            "A brief write up about the top Authors that fits within this section",
+          desc: "A brief write up about the top Authors that fits within this section",
           alt: "5 day ago",
-          svg: "media/svg/misc/006-plurk.svg"
+          svg: "media/svg/misc/006-plurk.svg",
         },
         {
           title: "Popular Authors",
-          desc:
-            "A brief write up about the Popular Authors that fits within this section",
+          desc: "A brief write up about the Popular Authors that fits within this section",
           alt: "5 day ago",
-          svg: "media/svg/misc/015-telegram.svg"
+          svg: "media/svg/misc/015-telegram.svg",
         },
         {
           title: "New Users",
-          desc:
-            "A brief write up about the New Users that fits within this section",
+          desc: "A brief write up about the New Users that fits within this section",
           alt: "5 day ago",
-          svg: "media/svg/misc/014-kickstarter.svg"
-        }
-      ]
+          svg: "media/svg/misc/014-kickstarter.svg",
+        },
+      ],
     };
   },
   components: {
-    Dropdown2
+    Dropdown2,
   },
   computed: {
-    ...mapGetters(["layoutConfig"])
-  }
+    ...mapGetters(["layoutConfig"]),
+  },
 };
 </script>

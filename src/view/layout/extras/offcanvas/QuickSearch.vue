@@ -197,68 +197,68 @@ export default {
         {
           title: "AirPlus Requirements",
           desc: "by Grog John",
-          svg: "media/svg/files/doc.svg"
+          svg: "media/svg/files/doc.svg",
         },
         {
           title: "TechNav Documentation",
           desc: "by Mary Broun",
-          svg: "media/svg/files/pdf.svg"
+          svg: "media/svg/files/pdf.svg",
         },
         {
           title: "All Framework Docs",
           desc: "by Nick Stone",
-          svg: "media/svg/files/xml.svg"
+          svg: "media/svg/files/xml.svg",
         },
         {
           title: "Finance & Accounting Reports",
           desc: "by Jhon Larson",
-          svg: "media/svg/files/csv.svg"
-        }
+          svg: "media/svg/files/csv.svg",
+        },
       ],
       list2: [
         {
           title: "Milena Gibson",
           desc: "UI Designer",
-          svg: "media/users/300_20.jpg"
+          svg: "media/users/300_20.jpg",
         },
         {
           title: "Stefan JohnStefan",
           desc: "Marketing Manager",
-          svg: "media/users/300_15.jpg"
+          svg: "media/users/300_15.jpg",
         },
         {
           title: "Anna Strong",
           desc: "Software Developer",
-          svg: "media/users/300_16.jpg"
+          svg: "media/users/300_16.jpg",
         },
         {
           title: "Nick Bold",
           desc: "Active Customer",
-          svg: "media/users/300_12.jpg"
-        }
+          svg: "media/users/300_12.jpg",
+        },
       ],
       list3: [
         {
           title: "79 PSD files generated",
           desc: "by Grog John",
-          class: "flaticon-psd text-primary"
+          class: "flaticon-psd text-primary",
         },
         {
           title: "$2900 worth products sold",
           desc: "Total 234 items",
-          class: "flaticon2-supermarket text-warning"
+          class: "flaticon2-supermarket text-warning",
         },
         {
           title: "4 New items submitted",
           desc: "Marketing Manager",
-          class: "flaticon-safe-shield-protection text-primary"
+          class: "flaticon-safe-shield-protection text-primary",
         },
         {
           title: "4 New items submitted",
           desc: "Marketing Manager",
-          class: "flaticon-safe-shield-protection text-warning"
-        }
-      ]
+          class: "flaticon-safe-shield-protection text-warning",
+        },
+      ],
     };
   },
   mounted() {
@@ -273,12 +273,12 @@ export default {
     },
     closeOffcanvas() {
       new KTOffcanvas(KTLayoutQuickSearch.getElement()).hide();
-    }
+    },
   },
   computed: {
     picture() {
       return process.env.BASE_URL + "media/users/300_21.jpg";
-    }
-  }
+    },
+  },
 };
 </script>

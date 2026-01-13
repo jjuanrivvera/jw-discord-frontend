@@ -7,14 +7,14 @@ import { mapGetters } from "vuex";
 import { EXCHANGE_CODE } from "@/core/services/store/auth.module";
 import {
   ADD_BODY_CLASSNAME,
-  REMOVE_BODY_CLASSNAME
+  REMOVE_BODY_CLASSNAME,
 } from "@/core/services/store/htmlclass.module.js";
 
 export default {
   name: "Layout",
   data() {
     return {
-      user: null
+      user: null,
     };
   },
   async mounted() {
@@ -22,7 +22,7 @@ export default {
 
     await this.$store.dispatch(EXCHANGE_CODE, {
       code: this.$route.query.code,
-      redirect_uri: `${location.protocol}//${location.host}/auth`
+      redirect_uri: `${location.protocol}//${location.host}/auth`,
     });
 
     if (!this.isAuthenticated) {
@@ -34,7 +34,7 @@ export default {
     await this.$store.dispatch(REMOVE_BODY_CLASSNAME, "page-loading");
   },
   computed: {
-    ...mapGetters(["isAuthenticated"])
-  }
+    ...mapGetters(["isAuthenticated"]),
+  },
 };
 </script>

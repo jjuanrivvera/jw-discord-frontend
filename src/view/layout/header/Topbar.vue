@@ -67,7 +67,7 @@ export default {
   name: "Topbar",
   components: {
     KTQuickUser,
-    KTDropdownNotification
-  }
+    KTDropdownNotification,
+  },
 };
 </script>

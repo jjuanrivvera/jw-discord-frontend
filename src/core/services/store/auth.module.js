@@ -18,7 +18,7 @@ export const SET_ERROR = "setError";
 const state = {
   errors: null,
   user: {},
-  isAuthenticated: !!JwtService.getToken()
+  isAuthenticated: !!JwtService.getToken(),
 };
 
 const getters = {
@@ -27,12 +27,12 @@ const getters = {
   },
   isAuthenticated(state) {
     return state.isAuthenticated;
-  }
+  },
 };
 
 const actions = {
   [LOGIN](context, credentials) {
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       ApiService.post("login", credentials)
         .then(({ data }) => {
           // console.log("Here what post returns", data);
@@ -48,7 +48,7 @@ const actions = {
     context.commit(PURGE_AUTH);
   },
   [REGISTER](context, credentials) {
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       ApiService.post("login", credentials)
         .then(({ data }) => {
           context.commit(SET_AUTH, data);
@@ -89,9 +89,9 @@ const actions = {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*"
+        "Access-Control-Allow-Origin": "*",
       },
-      body: JSON.stringify(payload)
+      body: JSON.stringify(payload),
     });
 
     if (response.status === 200) {
@@ -100,7 +100,7 @@ const actions = {
     } else {
       context.commit(SET_ERROR, "Invalid code");
     }
-  }
+  },
 };
 
 const mutations = {
@@ -121,12 +121,12 @@ const mutations = {
     state.user = {};
     state.errors = {};
     JwtService.destroyToken();
-  }
+  },
 };
 
 export default {
   state,
   actions,
   mutations,
-  getters
+  getters,
 };

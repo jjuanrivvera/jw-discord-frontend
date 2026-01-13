@@ -13,7 +13,7 @@ export const OVERRIDE_PAGE_LAYOUT_CONFIG = "overridePageLayoutConfig";
 export default {
   state: {
     config: config,
-    initial: config
+    initial: config,
   },
   getters: {
     /**
@@ -21,9 +21,9 @@ export default {
      * @param state
      * @returns {function(path, defaultValue): *}
      */
-    layoutConfig: state => (path, defaultValue) => {
+    layoutConfig: (state) => (path, defaultValue) => {
       return objectPath.get(state.config, path, defaultValue);
-    }
+    },
   },
   actions: {
     /**
@@ -58,7 +58,7 @@ export default {
      */
     [OVERRIDE_PAGE_LAYOUT_CONFIG](state, payload) {
       state.commit(OVERRIDE_PAGE_LAYOUT_CONFIG, payload);
-    }
+    },
   },
   mutations: {
     [SET_LAYOUT_CONFIG](state, payload) {
@@ -76,6 +76,6 @@ export default {
     },
     [OVERRIDE_PAGE_LAYOUT_CONFIG](state, payload) {
       state.config = merge(state.config, payload);
-    }
-  }
+    },
+  },
 };

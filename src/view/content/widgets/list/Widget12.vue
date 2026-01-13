@@ -89,6 +89,6 @@
 
 <script>
 export default {
-  name: "Widget12"
+  name: "Widget12",
 };
 </script>

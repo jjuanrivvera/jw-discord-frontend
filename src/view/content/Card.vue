@@ -20,7 +20,7 @@
       v-bind:class="{
         bodyClass,
         'body-fit': bodyFit,
-        'body-fluid': bodyFluid
+        'body-fluid': bodyFluid,
       }"
     >
       <slot name="body"></slot>
@@ -78,7 +78,7 @@ export default {
     /**
      * Code examples
      */
-    example: Boolean
+    example: Boolean,
   },
   components: {},
   methods: {},
@@ -88,7 +88,7 @@ export default {
         "example example-compact": this.example,
         "height-fluid": this.fluidHeight,
         "height-fluid-half": this.fluidHalfHeight,
-        "head-overlay": this.headOverlay
+        "head-overlay": this.headOverlay,
       };
 
       cls[this.headSizeClass] = this.headSizeClass;
@@ -111,7 +111,7 @@ export default {
         return `head-${this.headSize}`;
       }
       return false;
-    }
-  }
+    },
+  },
 };
 </script>

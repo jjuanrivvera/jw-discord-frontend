@@ -115,14 +115,10 @@
           <b-tabs class="hide-tabs" v-model="tabIndex">
             <b-tab active>
               <div class="form-group row">
-                <label class="col-lg-3 col-form-label">
-                  Page Loader:
-                </label>
+                <label class="col-lg-3 col-form-label"> Page Loader: </label>
                 <div class="col-lg-9 col-xl-4">
                   <select class="form-control" v-model="config.loader.type">
-                    <option value="false">
-                      Disabled
-                    </option>
+                    <option value="false">Disabled</option>
                     <option value="spinner-logo" selected="selected">
                       Spinner &amp; Logo
                     </option>
@@ -136,9 +132,7 @@
 
             <b-tab>
               <div class="form-group row">
-                <label class="col-lg-3 col-form-label">
-                  Fixed Header:
-                </label>
+                <label class="col-lg-3 col-form-label"> Fixed Header: </label>
                 <div class="col-lg-9 col-xl-4">
                   <span class="switch switch-icon">
                     <label>
@@ -308,7 +302,7 @@ export default {
   components: {},
   data() {
     return {
-      tabIndex: 0
+      tabIndex: 0,
     };
   },
   computed: {
@@ -316,7 +310,7 @@ export default {
 
     config() {
       return this.layoutConfig();
-    }
+    },
   },
   mounted() {
     // set the tab from previous
@@ -326,7 +320,7 @@ export default {
 
     this.$nextTick(() => {
       const hljs = this.$el.querySelectorAll(".hljs");
-      hljs.forEach(hl => {
+      hljs.forEach((hl) => {
         hl.classList.remove("hljs");
         hl.classList.add(`language-${hl.classList[1]}`);
       });
@@ -391,7 +385,7 @@ export default {
       // save new config to localStorage
       localStorage.setItem("config", JSON.stringify(this.config));
       window.location.reload();
-    }
-  }
+    },
+  },
 };
 </script>

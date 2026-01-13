@@ -74,34 +74,34 @@ export default {
           title: "Top Authors",
           desc: "Ricky Hunt, Sandra Trepp",
           svg: "media/svg/misc/006-plurk.svg",
-          profit: "+105$"
+          profit: "+105$",
         },
         {
           title: "Top Sales",
           desc: "PitStop Emails",
           svg: "media/svg/misc/015-telegram.svg",
-          profit: "+60$"
+          profit: "+60$",
         },
         {
           title: "Bestsellers",
           desc: "Pitstop Email Marketing",
           svg: "media/svg/misc/003-puzzle.svg",
-          profit: "+75$"
+          profit: "+75$",
         },
         {
           title: "Top Engagement",
           desc: "KT.com solutions",
           svg: "media/svg/misc/009-hot-air-balloon.svg",
-          profit: "+75$"
-        }
-      ]
+          profit: "+75$",
+        },
+      ],
     };
   },
   components: {
-    Dropdown3
+    Dropdown3,
   },
   computed: {
-    ...mapGetters(["layoutConfig"])
-  }
+    ...mapGetters(["layoutConfig"]),
+  },
 };
 </script>

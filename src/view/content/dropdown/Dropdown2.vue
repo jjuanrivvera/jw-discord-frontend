@@ -13,9 +13,7 @@
     <!--begin::Navigation-->
     <div class="navi navi-hover min-w-md-250px">
       <b-dropdown-text tag="div" class="navi-header font-weight-bold">
-        <span class="font-size-lg">
-          Choose Label:
-        </span>
+        <span class="font-size-lg"> Choose Label: </span>
         <i
           class="flaticon2-information icon-md text-muted"
           v-b-tooltip="'Click to learn more...'"
@@ -114,6 +112,6 @@
 export default {
   name: "dropdown-2",
   components: {},
-  mounted() {}
+  mounted() {},
 };
 </script>

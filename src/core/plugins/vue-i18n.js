@@ -20,7 +20,7 @@ const lang = localStorage.getItem("language") || "en";
 // Create VueI18n instance with options
 const i18n = new VueI18n({
   locale: lang, // set locale
-  messages // set locale messages
+  messages, // set locale messages
 });
 
 export default i18n;

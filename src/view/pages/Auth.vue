@@ -27,7 +27,7 @@ export default {
   data() {
     return {
       code: null,
-      user: null
+      user: null,
     };
   },
   mounted() {
@@ -68,13 +68,13 @@ export default {
         method: "POST",
         url: url,
         headers: {
-          "Content-Type": "application/x-www-form-urlencoded"
+          "Content-Type": "application/x-www-form-urlencoded",
         },
         params: {
-          code: this.code
-        }
+          code: this.code,
+        },
       });
-    }
-  }
+    },
+  },
 };
 </script>

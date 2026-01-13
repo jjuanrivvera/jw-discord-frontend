@@ -117,23 +117,23 @@ import KTLayoutExamples from "@/assets/js/layout/extended/examples.js";
 export default {
   name: "KTCodePreview",
   props: {
-    title: String
+    title: String,
   },
   data() {
     return {
       tabIndex: 0,
-      isOpen: false
+      isOpen: false,
     };
   },
   components: {
-    KTCard
+    KTCard,
   },
   mounted() {
     // init example codes
     this.$nextTick(() => {
       KTLayoutExamples.init([this.$el]);
       const hljs = this.$el.querySelectorAll(".hljs");
-      hljs.forEach(hl => {
+      hljs.forEach((hl) => {
         hl.classList.add(`language-${hl.classList[1]}`);
         hl.classList.remove("hljs");
       });
@@ -158,7 +158,7 @@ export default {
 
       // set clicked tab index to bootstrap tab
       this.tabIndex = parseInt(event.target.getAttribute("data-tab"));
-    }
+    },
   },
   computed: {
     /**
@@ -175,7 +175,7 @@ export default {
      */
     hasSingleCodeType() {
       let exist = 0;
-      ["html", "js", "scss"].forEach(type => {
+      ["html", "js", "scss"].forEach((type) => {
         if (this.$slots.hasOwnProperty(type)) {
           exist++;
         }
@@ -213,7 +213,7 @@ export default {
      */
     hasHtmlCode() {
       return !!this.$slots["html"];
-    }
-  }
+    },
+  },
 };
 </script>

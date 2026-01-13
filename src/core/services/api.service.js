@@ -22,7 +22,7 @@ const ApiService = {
   },
 
   query(resource, params) {
-    return Vue.axios.get(resource, params).catch(error => {
+    return Vue.axios.get(resource, params).catch((error) => {
       // console.log(error);
       throw new Error(`[KT] ApiService ${error}`);
     });
@@ -35,7 +35,7 @@ const ApiService = {
    * @returns {*}
    */
   get(resource, slug = "") {
-    return Vue.axios.get(`${resource}/${slug}`).catch(error => {
+    return Vue.axios.get(`${resource}/${slug}`).catch((error) => {
       // console.log(error);
       throw new Error(`[KT] ApiService ${error}`);
     });
@@ -78,11 +78,11 @@ const ApiService = {
    * @returns {*}
    */
   delete(resource) {
-    return Vue.axios.delete(resource).catch(error => {
+    return Vue.axios.delete(resource).catch((error) => {
       // console.log(error);
       throw new Error(`[RWV] ApiService ${error}`);
     });
-  }
+  },
 };
 
 export default ApiService;

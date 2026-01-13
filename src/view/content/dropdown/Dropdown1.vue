@@ -17,9 +17,7 @@
           <span class="navi-icon">
             <i class="flaticon2-graph-1"></i>
           </span>
-          <span class="navi-text">
-            Order
-          </span>
+          <span class="navi-text"> Order </span>
         </a>
       </b-dropdown-text>
       <b-dropdown-text tag="div" class="navi-item">
@@ -27,9 +25,7 @@
           <span class="navi-icon">
             <i class="flaticon2-calendar-4"></i>
           </span>
-          <span class="navi-text">
-            Event
-          </span>
+          <span class="navi-text"> Event </span>
         </a>
       </b-dropdown-text>
       <b-dropdown-text tag="div" class="navi-item">
@@ -37,9 +33,7 @@
           <span class="navi-icon">
             <i class="flaticon2-layers-1"></i>
           </span>
-          <span class="navi-text">
-            Report
-          </span>
+          <span class="navi-text"> Report </span>
         </a>
       </b-dropdown-text>
       <b-dropdown-text tag="div" class="navi-item">
@@ -47,9 +41,7 @@
           <span class="navi-icon">
             <i class="flaticon2-calendar-4"></i>
           </span>
-          <span class="navi-text">
-            Post
-          </span>
+          <span class="navi-text"> Post </span>
         </a>
       </b-dropdown-text>
       <b-dropdown-text tag="div" class="navi-item">
@@ -57,9 +49,7 @@
           <span class="navi-icon">
             <i class="flaticon2-file-1"></i>
           </span>
-          <span class="navi-text">
-            File
-          </span>
+          <span class="navi-text"> File </span>
         </a>
       </b-dropdown-text>
     </div>
@@ -80,6 +70,6 @@
 export default {
   name: "dropdown-1",
   components: {},
-  mounted() {}
+  mounted() {},
 };
 </script>

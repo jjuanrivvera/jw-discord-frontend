@@ -17,7 +17,7 @@
         <!--end::Header-->
         <!--begin::Content-->
         <div
-          class="content  d-flex flex-column flex-column-fluid"
+          class="content d-flex flex-column flex-column-fluid"
           id="kt_content"
         >
           <!--begin::Subheader-->
@@ -28,7 +28,7 @@
             <div
               :class="{
                 'container-fluid': contentFluid,
-                container: !contentFluid
+                container: !contentFluid,
               }"
             >
               <transition name="fade-in-up">
@@ -60,7 +60,7 @@ import KTFooter from "@/view/layout/footer/Footer";
 import KTScrollTop from "@/view/layout/extras/ScrollTop";
 import {
   ADD_BODY_CLASSNAME,
-  REMOVE_BODY_CLASSNAME
+  REMOVE_BODY_CLASSNAME,
 } from "@/core/services/store/htmlclass.module.js";
 
 export default {
@@ -72,7 +72,7 @@ export default {
     KTHeader,
     KTFooter,
     KTSubheader,
-    KTScrollTop
+    KTScrollTop,
   },
   beforeMount() {
     // show page loading
@@ -98,7 +98,7 @@ export default {
       "isAuthenticated",
       "breadcrumbs",
       "pageTitle",
-      "layoutConfig"
+      "layoutConfig",
     ]),
 
     /**
@@ -132,7 +132,7 @@ export default {
     toolbarDisplay() {
       // return !!this.layoutConfig("toolbar.display");
       return true;
-    }
-  }
+    },
+  },
 };
 </script>

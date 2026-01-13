@@ -74,11 +74,11 @@ export default {
   methods: {},
   computed: {
     ...mapState({
-      errors: state => state.auth.errors
+      errors: (state) => state.auth.errors,
     }),
     backgroundImage() {
       return process.env.BASE_URL + "media/bg/bg-4.jpg";
-    }
-  }
+    },
+  },
 };
 </script>

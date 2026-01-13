@@ -62,9 +62,9 @@ export default {
   name: "dropdown-4",
   props: {
     btnClass: String,
-    btnText: String
+    btnText: String,
   },
   components: {},
-  mounted() {}
+  mounted() {},
 };
 </script>

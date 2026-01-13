@@ -12,7 +12,7 @@ export default {
   name: "Loader",
   props: {
     logo: String,
-    spinnerClass: String
-  }
+    spinnerClass: String,
+  },
 };
 </script>

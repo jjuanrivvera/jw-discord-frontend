@@ -151,13 +151,13 @@ export default {
   name: "Aside",
   components: {
     KTQuickPanel,
-    KTBrand
+    KTBrand,
   },
   mounted() {
     this.$nextTick(() => {
       // Init Aside
       KTLayoutAside.init(this.$refs["kt_aside"]);
     });
-  }
+  },
 };
 </script>

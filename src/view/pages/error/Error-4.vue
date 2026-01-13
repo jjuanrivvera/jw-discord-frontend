@@ -3,7 +3,7 @@
     <div
       class="error error-4 d-flex flex-row-fluid bgi-size-cover bgi-position-center"
       :style="{
-        backgroundImage: `url(${backgroundImage})`
+        backgroundImage: `url(${backgroundImage})`,
       }"
     >
       <!-- begin:: Content -->
@@ -40,7 +40,7 @@ export default {
   computed: {
     backgroundImage() {
       return process.env.BASE_URL + "media/error/bg4.jpg";
-    }
-  }
+    },
+  },
 };
 </script>

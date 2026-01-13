@@ -43,14 +43,14 @@ export default {
         logo = logos[Object.keys(logos)[0]];
       }
       return process.env.BASE_URL + logo;
-    }
+    },
   },
   computed: {
     ...mapGetters(["layoutConfig"]),
 
     allowMinimize() {
       return !!this.layoutConfig("aside.self.minimize.toggle");
-    }
-  }
+    },
+  },
 };
 </script>

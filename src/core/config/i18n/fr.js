@@ -1,7 +1,7 @@
 // France
 export const locale = {
   TRANSLATOR: {
-    SELECT: "choisissez votre langue"
+    SELECT: "choisissez votre langue",
   },
   MENU: {
     NEW: "Nouveau",
@@ -10,7 +10,7 @@ export const locale = {
     PAGES: "Pages",
     FEATURES: "Fonctionnalités",
     APPS: "Applications",
-    DASHBOARD: "Tableau de Bord"
+    DASHBOARD: "Tableau de Bord",
   },
   AUTH: {
     GENERAL: {
@@ -22,28 +22,28 @@ export const locale = {
       BACK_BUTTON: "Back",
       PRIVACY: "Privacy",
       LEGAL: "Legal",
-      CONTACT: "Contact"
+      CONTACT: "Contact",
     },
     LOGIN: {
       TITLE: "Créer un compte",
-      BUTTON: "Sign In"
+      BUTTON: "Sign In",
     },
     FORGOT: {
       TITLE: "Forgot Password?",
       DESC: "Enter your email to reset your password",
-      SUCCESS: "Your account has been successfully reset."
+      SUCCESS: "Your account has been successfully reset.",
     },
     REGISTER: {
       TITLE: "Sign Up",
       DESC: "Enter your details to create your account",
-      SUCCESS: "Your account has been successfuly registered."
+      SUCCESS: "Your account has been successfuly registered.",
     },
     INPUT: {
       EMAIL: "Email",
       FULLNAME: "Fullname",
       PASSWORD: "Mot de passe",
       CONFIRM_PASSWORD: "Confirm Password",
-      USERNAME: "Nom d'utilisateur"
+      USERNAME: "Nom d'utilisateur",
     },
     VALIDATION: {
       INVALID: "{{name}} n'est pas valide",
@@ -55,8 +55,8 @@ export const locale = {
       REQUIRED_FIELD: "Required field",
       MIN_LENGTH_FIELD: "Minimum field length:",
       MAX_LENGTH_FIELD: "Maximum field length:",
-      INVALID_FIELD: "Field is not valid"
-    }
+      INVALID_FIELD: "Field is not valid",
+    },
   },
   ECOMMERCE: {
     COMMON: {
@@ -70,7 +70,7 @@ export const locale = {
       BUSINESS: "Business",
       INDIVIDUAL: "Individual",
       SEARCH: "Search",
-      IN_ALL_FIELDS: "in all fields"
+      IN_ALL_FIELDS: "in all fields",
     },
     ECOMMERCE: "éCommerce",
     CUSTOMERS: {
@@ -81,24 +81,24 @@ export const locale = {
         TITLE: "Suppression du client",
         DESCRIPTION: "Êtes-vous sûr de supprimer définitivement ce client?",
         WAIT_DESCRIPTION: "Le client est en train de supprimer ...",
-        MESSAGE: "Le client a été supprimé"
+        MESSAGE: "Le client a été supprimé",
       },
       DELETE_CUSTOMER_MULTY: {
         TITLE: "Supprimer les clients",
         DESCRIPTION:
           "Êtes-vous sûr de supprimer définitivement les clients sélectionnés?",
         WAIT_DESCRIPTION: "Les clients suppriment ...",
-        MESSAGE: "Les clients sélectionnés ont été supprimés"
+        MESSAGE: "Les clients sélectionnés ont été supprimés",
       },
       UPDATE_STATUS: {
         TITLE: "Le statut a été mis à jour pour les clients sélectionnés",
         MESSAGE:
-          "Le statut des clients sélectionnés a été mis à jour avec succès"
+          "Le statut des clients sélectionnés a été mis à jour avec succès",
       },
       EDIT: {
         UPDATE_MESSAGE: "Le client a été mis à jour",
-        ADD_MESSAGE: "Le client a été créé"
-      }
-    }
-  }
+        ADD_MESSAGE: "Le client a été créé",
+      },
+    },
+  },
 };

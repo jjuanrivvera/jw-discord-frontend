@@ -6,17 +6,17 @@ module.exports = {
     resolve: {
       alias: {
         // If using the runtime only build
-        vue$: "vue/dist/vue.runtime.esm.js" // 'vue/dist/vue.runtime.common.js' for webpack 1
+        vue$: "vue/dist/vue.runtime.esm.js", // 'vue/dist/vue.runtime.common.js' for webpack 1
         // Or if using full build of Vue (runtime + compiler)
         // vue$: 'vue/dist/vue.esm.js'      // 'vue/dist/vue.common.js' for webpack 1
-      }
-    }
+      },
+    },
   },
-  chainWebpack: config => {
+  chainWebpack: (config) => {
     config.module
       .rule("eslint")
       .use("eslint-loader")
-      .tap(options => {
+      .tap((options) => {
         options.configFile = path.resolve(__dirname, ".eslintrc.js");
         return options;
       });
@@ -25,13 +25,13 @@ module.exports = {
     loaderOptions: {
       postcss: {
         config: {
-          path: __dirname
-        }
+          path: __dirname,
+        },
       },
       scss: {
-        prependData: `@import "@/assets/sass/vendors/vue/vuetify/variables.scss";`
-      }
-    }
+        prependData: `@import "@/assets/sass/vendors/vue/vuetify/variables.scss";`,
+      },
+    },
   },
-  transpileDependencies: ["vuetify"]
+  transpileDependencies: ["vuetify"],
 };

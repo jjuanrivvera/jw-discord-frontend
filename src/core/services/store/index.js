@@ -7,6 +7,7 @@ import config from "./config.module";
 import breadcrumbs from "./breadcrumbs.module";
 import profile from "./profile.module";
 import guild from "./guild.module";
+import content from "./content.module";
 
 Vue.use(Vuex);
 
@@ -17,6 +18,7 @@ export default new Vuex.Store({
     config,
     breadcrumbs,
     profile,
-    guild
-  }
+    guild,
+    content,
+  },
 });

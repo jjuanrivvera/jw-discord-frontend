@@ -53,7 +53,7 @@ export default {
   name: "Header",
   components: {
     KTMenu,
-    KTTopbar
+    KTTopbar,
   },
   mounted() {
     // Init Desktop & Mobile Headers
@@ -67,7 +67,7 @@ export default {
 
     const headerRef = this.$refs["kt_header"];
 
-    headerRef.querySelectorAll("a[class='menu-link']").forEach(item => {
+    headerRef.querySelectorAll("a[class='menu-link']").forEach((item) => {
       item.addEventListener("click", () => {
         KTLayoutHeaderMenu.getOffcanvas().hide();
       });
@@ -113,7 +113,7 @@ export default {
      */
     widthFluid() {
       return this.layoutConfig("header.self.width") === "fluid";
-    }
-  }
+    },
+  },
 };
 </script>
