@@ -36,6 +36,21 @@ export default new Router({
           name: "server-schedules",
           component: () => import("@/view/pages/server/ServerSchedules.vue"),
         },
+        {
+          path: "/content/texts",
+          name: "daily-texts",
+          component: () => import("@/view/pages/content/DailyTexts.vue"),
+        },
+        {
+          path: "/content/news",
+          name: "news-list",
+          component: () => import("@/view/pages/content/NewsList.vue"),
+        },
+        {
+          path: "/content/topics",
+          name: "topics-list",
+          component: () => import("@/view/pages/content/TopicsList.vue"),
+        },
       ],
     },
     {
