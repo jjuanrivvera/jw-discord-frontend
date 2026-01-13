@@ -256,7 +256,7 @@ describe("Guild Module", () => {
         );
 
         expect(ApiService.get).toHaveBeenCalledWith(
-          "/api/v1/schedules?guild=123"
+          "/api/v1/schedules/guild/123"
         );
         expect(commit).toHaveBeenCalledWith(SET_GUILD_SCHEDULES, schedules);
         expect(result).toEqual(schedules);
@@ -265,23 +265,22 @@ describe("Guild Module", () => {
 
     describe("CREATE_SCHEDULE_ACTION", () => {
       it("should create new schedule", async () => {
-        const newSchedule = {
-          guild: "123",
+        const scheduleData = {
           action: "sendDailyText",
           channelId: "456",
           time: "07",
         };
-        const createdSchedule = { _id: "1", ...newSchedule };
+        const createdSchedule = { _id: "1", guild: "123", ...scheduleData };
         ApiService.post.mockResolvedValue({ data: createdSchedule });
 
         const result = await guildModule.actions[CREATE_SCHEDULE_ACTION](
           { commit },
-          newSchedule
+          { guildId: "123", scheduleData }
         );
 
         expect(ApiService.post).toHaveBeenCalledWith(
-          "/api/v1/schedules",
-          newSchedule
+          "/api/v1/schedules/guild/123",
+          scheduleData
         );
         expect(commit).toHaveBeenCalledWith(ADD_SCHEDULE, createdSchedule);
         expect(result).toEqual(createdSchedule);
