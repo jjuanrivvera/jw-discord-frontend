@@ -139,7 +139,7 @@ const actions = {
     try {
       ApiService.setHeader();
       const response = await ApiService.get(
-        `/api/v1/schedules?guild=${guildId}`
+        `/api/v1/schedules/guild/${guildId}`
       );
       commit(SET_GUILD_SCHEDULES, response.data);
       return response.data;
@@ -151,10 +151,13 @@ const actions = {
     }
   },
 
-  async [CREATE_SCHEDULE_ACTION]({ commit }, scheduleData) {
+  async [CREATE_SCHEDULE_ACTION]({ commit }, { guildId, scheduleData }) {
     try {
       ApiService.setHeader();
-      const response = await ApiService.post("/api/v1/schedules", scheduleData);
+      const response = await ApiService.post(
+        `/api/v1/schedules/guild/${guildId}`,
+        scheduleData
+      );
       commit(ADD_SCHEDULE, response.data);
       return response.data;
     } catch (error) {
